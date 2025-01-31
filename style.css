@@ -166,3 +166,9 @@ body{
     color: #ffffff;
     transform: rotateY(180deg); /* Flips the back content */
 }
+#card2{
+    opacity: .10;
+}
+#text{
+    color: #effffe;
+}
