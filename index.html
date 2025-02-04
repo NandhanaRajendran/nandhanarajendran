@@ -115,7 +115,6 @@
                                     <li>Web Development (Currently Exploring)</li>
                                     <li>Cyber Security (Currently Exploring)</li>
                                 </ol>
-                                <p class="card-text">Some quick example text to build on the card title.</p>
                             </div>
                         </div>
                     </div>
@@ -130,7 +129,6 @@
                                     <li><a href="https://navyamariamjohn.github.io/Axon/" class="projectlink text-light">Web-based Personal Tutor (Hackathon Project)</a></li>
                                     <li><a href="https://nandhanarajendran.github.io/FacebookFrontPage/" class="projectlink text-light">Facebook Front Page</a></li>
                                 </ol>
-                                <p class="card-text">Some quick example text to build on the card title.</p>
                             </div>
                         </div>
                     </div>
@@ -196,4 +194,54 @@
                 </form>
             </div>
         </div>
+    </section>
+
+    <footer style="background-color: rgb(3, 3, 31); height: 7.5em;">
+        <div class="container text-center text-light" >
+            <div class="row ">
+                <div class="col-md-12" style="text-align:center; ">
+                    <p style="margin-top: 15px;margin-right: 15px;">@Copyright</p>
+                    <a href="https://www.linkedin.com/in/nandhana-rajendran-581332304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon">
+                        <img src="linkedin-removebg-preview.png" alt="LinkedIn Icon" style="width: 2.5em; margin-top: 1px;">
+                    </a>
+                    <a href="https://www.instagram.com/crazy_psyche_?igsh=MW05ZnFhOGg3ZTkzdg==" class="icon">
+                        <img src="https://img.icons8.com/m_outlined/200/FFFFFF/instagram-new--v2.png" alt="Instagram Icon" style="width: 2.3em;margin-top: 10px;">
+                    </a>
+                    <a href="https://x.com/Nandhana_PR_?t=JYa28MVkNIq2ptMJVej4LA&s=09" class="icon">
+                        <img src="twitter-removebg-preview.png" alt="Twitter Icon" style="width: 3em;margin-top: 10px;">
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+   
+
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwpc303O0jQHIRCZm8H4dCjyQ5shJPN2wZEeqZCT5_t5BeEvz9gezL5pn_VggtBOR8o/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    console.log("FUnctio working properly")
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+</body>
+</html>
