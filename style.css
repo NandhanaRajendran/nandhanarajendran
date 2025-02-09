@@ -89,7 +89,7 @@ html{
     filter: brightness(1.5); /* Brightens the icon */
 }
 body{
-    background-image: url('BackgroundPic_enhanced.png');
+    background-image: url('img/BackgroundPic_enhanced.png');
     background-size: cover; /* Ensures the image covers the whole background */
     background-position: center; /* Centers the image */
     background-attachment: fixed; /* Makes the background image stay fixed when scrolling */
