@@ -1,226 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Nandhana Rajendran</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="icon" href="img/ProfilePic.jpeg">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" type="text/css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nandhana Rajendran</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header style="position: fixed; width: 100%; z-index: 1; background-color: rgba(0, 0, 255, 0.2); backdrop-filter: blur(0.5px);">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <!-- Logo/Name Section -->
-                <div class="col-md-6 col-9">
-                    <a href="index.html" style="text-decoration: none;">
-                        <h2 class="text-white p-3 pl-md-5" style="font-weight: bold;">Nandhana Rajendran</h2>
-                    </a>
-                </div>
-    
-                <!-- Navbar Section -->
-                <div class="col-md-6 col-3">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-    
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link text-white" href="#Home-section">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white" href="#About-section">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white" href="#Skills/Projects-section">Skills</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white" href="#Experience-section">Experience</a>
-                                </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link text-white" href="#Contact-section">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="logo">Nandhana Rajendran</a>
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ... HEAD SECTION UNCHANGED ... -->
+
+<header>
+  <div class="container">
+    <h1>Hello, I'm Nandhana Rajendran</h1>
+    <p>B.Tech CSE Student | Aspiring Software Developer</p>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+      <p>I'm a dedicated B.Tech Computer Science student at KTU with a strong interest in web development, app development, and artificial intelligence. I enjoy working on real-world projects to enhance my skills and am actively seeking internship opportunities to gain practical industry experience.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-item"><div class="skill-icon">&#128187;</div><h3>HTML</h3></div>
+      <div class="skill-item"><div class="skill-icon">&#127912;</div><h3>CSS</h3></div>
+      <div class="skill-item"><div class="skill-icon">&#129504;</div><h3>JavaScript</h3></div>
+      <div class="skill-item"><div class="skill-icon">&#129504;</div><h3>C</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-container">
+      <h4>To Do List Website</h4>
+      <p>
+        <a href="https://6824d2c0cf0437440c20c2c4--taskino.netlify.app/" target="_blank">url</a><br>
+        🔹 Developed a responsive CRUD-based task management website.<br>
+        🔹 Integrated local storage for data persistence.<br>
+        🔹 Designed an intuitive UI with a Dark Mode toggle.<br>
+        🔹 Technologies: HTML, CSS, JavaScript.
+      </p>
+    </div>
+
+    <div class="projects-container">
+      <h4>Web-based AI Personal Tutor (Hackathon Project)</h4>
+      <p>
+        <a href="https://navyamariamjohn.github.io/Axon/" target="_blank">url</a><br>
+        🔹 Created a prototype of an AI-powered platform offering curated learning resources.<br>
+        🔹 Technologies: HTML, CSS, JavaScript, Chatbase.
+      </p>
+    </div>
+
+    <div class="projects-container">
+      <h4>Responsive Login Page</h4>
+      <p>
+        <a href="https://nandhanarajendran.github.io/LoginPage1/" target="_blank">url</a><br>
+        🔹 Designed a mobile-friendly login interface.<br>
+        🔹 Employed modern design principles for enhanced user experience.<br>
+        🔹 Technologies: HTML, CSS.
+      </p>
+    </div>
+
+    <div class="projects-container">
+      <h4>Independence Day Landing Page</h4>
+      <p>
+        <a href="https://nandhanarajendran.github.io/LandingPageSample/" target="_blank">url</a><br>
+        🔹 Developed a festive landing page commemorating Independence Day.<br>
+        🔹 Included Dark Mode support for accessibility.<br>
+        🔹 Technologies: HTML, CSS.
+      </p>
+    </div>
+
+    <div class="projects-container">
+      <h4>Responsive Portfolio Website</h4>
+      <p>
+        <a href="https://nandhanarajendran.github.io/nandhanarajendran/" target="_blank">url</a><br>
+        🔹 Designed a clean, responsive personal portfolio site.<br>
+        🔹 Integrated a contact form for direct communication.<br>
+        🔹 Technologies: HTML, CSS, JavaScript.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="projects-container">
+      <h4>Volunteer, Stellerio Club (Sep 2023 – Sep 2024)</h4>
+      <p>
+        🔹 Supported the coordination of technical workshops and events.<br>
+        🔹 Actively participated in Space Week initiatives.
+      </p>
+    </div>
+
+    <div class="projects-container">
+      <h4>Little Kites Cadet (June 2017 – March 2020)</h4>
+      <p>
+        🔹 Attended a 3-day animation workshop using Blender.<br>
+        🔹 Developed a basic calculator application during a programming session.
+      </p>
+    </div>
+
+    <div class="projects-container">
+      <h4>Junior Red Cross Cadet (Sep 2017 – March 2020)</h4>
+      <p>
+        🔹 Participated in inter-school training camps and community service.<br>
+        🔹 Volunteered during school events and elections.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <div class="contact-info-item">
+          <div class="contact-icon">✉️</div>
+          <div><h4>Email</h4><p>student.email@example.com</p></div>
         </div>
-    </header>
-    
-    <section class="p-5" id="Home-section">
-        <div class="container-fluid" style="margin-top: 15em;height: 25em;">
-            <div class="row align-items-center">
-                <!-- Image Section -->
-                <div class="col-md-6 text-center">
-                    <img 
-                        src="img/ProfilePic.jpeg" 
-                        alt="Profile Picture" 
-                        class="img-fluid rounded-circle" 
-                        style="max-width: 200px; border: 5px solid #8f8e8e;">
-                </div>
-                <!-- Text Section -->
-                <div class="col-md-6 text-center text-md-left pt-4 pt-md-0">
-                    <h4 class="mb-3 text-light">Computer Science Engineering Student</h4>
-                    <h5 class="text-light">GEC Idukki</h5>
-                    <p class="mt-3 font-italic text-light">"The choices we make will make us"</p>
-                    <footer class="blockquote-footer" style="color: #cccbcb;"> Nandhana Rajendran</footer>
-                </div>
-            </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📱</div>
+          <div><h4>Phone</h4><p>Your Phone Number</p></div>
         </div>
-    </section>
-    
-    <section class="p-5 "  id="About-section">
-        <div class="container-fluid" style="height: 25em;margin-top: 15em;">
-            <h1 class="text-center mb-5 text-light" >About</h1>
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-8 text-center">
-                    <p class="text-light mb-4">
-                        I’m a 2nd-year BTech CSE student passionate about technical fields like: 
-                        <span class="font-weight-bold text-light pl-3 mb-4">Web Development, App Development, Cyber Security, and Artificial Intelligence.</span>
-                    
-                        I have basic knowledge in Frontend Development (HTML, CSS, JS) and recently participated in an exciting Hackathon.
-                    </p>
-                    <a href="#" download="Resume_Nandhana_Rajendran.pdf" class="btn btn-primary">Download Resume</a>
-
-                </div>
-            </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📍</div>
+          <div><h4>Location</h4><p>Your City, Country</p></div>
         </div>
-    </section>
-    
-    <section class="p-5" id="Skills/Projects-section">
-        <div class="container-fluid" style="height: 25em;margin-top: 5em;">
-            <h1 class="text-center mb-5 text-light ">Skills & Projects</h1>         
-            <div class="container mt-4">
-                <div class="row justify-content-center">
-                    <!-- Skills Card (Left) -->
-                    <div class="col-12 col-md-5 mb-4 d-flex" >
-                        <div class="card border-success mb-3 w-100 h-100 d-flex flex-column">
-                            <div class="card-header bg-dark border-success"><h4 id="text">Skills</h4></div>
-                            <div class="card-body bg-dark text-light d-flex flex-column justify-content-center" >
-                                <ol>
-                                    <li>Frontend Development
-                                        <ul>
-                                            <li>HTML</li>
-                                            <li>CSS</li>
-                                            <li>JavaScript</li>
-                                        </ul>
-                                    </li>
-                                    <li>Web Development (Currently Exploring)</li>
-                                    <li>Cyber Security (Currently Exploring)</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <!-- Projects Card (Right) -->
-                    <div class="col-12 col-md-5 mb-4 d-flex" >
-                        <div class="card border-success mb-3 w-100 h-100 d-flex flex-column">
-                            <div class="card-header text-light bg-dark border-success">Projects</div>
-                            <div class="card-body bg-dark text-light d-flex flex-column justify-content-center">
-                                <ol>
-                                    <li><a href="" class="projectlink text-light">Personal Portfolio Website</a></li>
-                                    <li><a href="" class="projectlink text-light">Web-based Personal Tutor (Hackathon Project)</a></li>
-                                    <li><a href="" class="projectlink text-light">Facebook Front Page</a></li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">👥</div>
+          <div><h4>LinkedIn</h4><p><a href="#">linkedin.com/in/username</a></p></div>
         </div>
-    </section>
-    
-    
+      </div>
+      <div class="contact-form">
+        <h3>Send Me a Message</h3>
+        <form id="contactForm">
+          <div class="form-group"><label for="name">Name</label><input type="text" id="name" class="form-control" required></div>
+          <div class="form-group"><label for="email">Email</label><input type="email" id="email" class="form-control" required></div>
+          <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" class="form-control" required></div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" class="form-control" required></textarea></div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="p-5" id="Experience-section">
-        <div class="container-fluid mt-5" style="height: 30em;">
-            <h1 class="text-center mb-4 text-light">Experience</h1>
-            <div class="row">
-                <!-- Card 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="book">
-                       
-                        <div class="content">
-                            <p class="card-text">
-                                Built a functional web-based personal tutor platform using Python (Flask).
-                                Worked in a team of 4, focusing on AI-powered skill development resources.<br>
-                                <a href="" class="projectlink">Click here to see my project</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="ml-2" id="Contact-section">
-        <div class="container-fluid mt-4">
-            <div class="row pt-3">
-                <h1 class="text-center col-12 mb-4 text-light">Contact Me</h1>
-                <form id="submit-form" action="" class="row w-100 px-5">
-                    <!-- Left column -->
-                    <div class="form-group col-md-6 col-12">
-                        <input class="form-control mb-3" type="text" placeholder="Name" required="true">
-                    </div>
-                    <!-- Right column -->
-                    <div class="form-group col-md-6 col-12">
-                        <input type="text" class="form-control mb-3" placeholder="Place" required="true">
-                    </div>
-                    <!-- Email field -->
-                    <div class="form-group col-md-6 col-12">
-                        <input class="form-control mb-3" type="email" placeholder="Email" required="true">
-                    </div>
-                    <!-- Phone number -->
-                    <div class="form-group col-md-6 col-12">
-                        <input type="tel" class="form-control mb-3" placeholder="Phone Number(Optional)">
-                    </div>
-                    <!-- Textarea -->
-                    <div class="form-group col-12">
-                        <textarea class="form-control mb-3" rows="5" placeholder="Text messages here..."></textarea>
-                    </div>
-                    <!-- Button centered -->
-                    <div class="form-group col-12 text-center">
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer style="background-color: rgb(3, 3, 31); height: 7.5em;">
-        <div class="container text-center text-light" >
-            <div class="row ">
-                <div class="col-md-12" style="text-align:center; ">
-                    <p style="margin-top: 15px;margin-right: 15px;">@Copyright</p>
-                    <a href="#" class="icon">
-                        <img src="img/linkedin-removebg-preview.png" alt="LinkedIn Icon" style="width: 2.5em; margin-top: 1px;">
-                    </a>
-                    <a href="#" class="icon">
-                        <img src="img/instagramIcon.png" alt="Instagram Icon" style="width: 2.3em;margin-top: 10px;">
-                    </a>
-                    <a href="#" class="icon">
-                        <img src="img/twitter-removebg-preview.png" alt="Twitter Icon" style="width: 3em;margin-top: 10px;">
-                    </a>
-                    
-                </div>
-            </div>
-        </div>
-    </footer>
+<footer>
+  <div class="social-links">
+    <a href="#" class="social-icon">LI</a>
+    <a href="#" class="social-icon">IG</a>
+    <a href="#" class="social-icon">TW</a>
+    <a href="#" class="social-icon">GH</a>
+  </div>
+  <p>&copy; 2025 Nandhana Rajendran. All rights reserved.</p>
+</footer>
 
 
-
-   
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-   
-
-    
+  <script src="script.js"></script>
 </body>
 </html>
