@@ -1,379 +1,268 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nandhana Rajendran</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-  </head>
-  <body>
-    <nav>
-      <div class="nav-container">
-        <a href="#" class="logo">Nandhana Rajendran</a>
-        <div class="menu-toggle" id="menu-toggle">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nandhana Rajendran</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="logo">NR<span class="logo-dot">.</span></a>
+      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Internships
+      </div>
+      <h1>I'm Nandhana<br/><em>Rajendran</em></h1>
+      <p class="hero-sub">B.Tech CSE Student &amp; Aspiring Software Developer building full-stack experiences.</p>
+      <p class="hero-tech">
+  MERN Stack • Data Structures & Algorithms • Problem Solving
+</p>
+      <div class="hero-ctas">
+        <a href="NandhanaRajendran.pdf" class="btn btn-primary" download>
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch →</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label"><span></span>About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Turning ideas into<br/>working software</h2>
+          <p>I'm a <strong>3rd-year B.Tech CSE student at KTU</strong>, passionate about building meaningful digital products. My focus spans full-stack development — from crafting intuitive frontends to architecting scalable backends.</p>
+          <p>I believe the best way to learn is by building. Every project is a chance to push my limits, pick up new tools, and ship something real.</p>
         </div>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <header>
-      <div class="container">
-        <h1>Hello, I'm Nandhana Rajendran</h1>
-        <p>B.Tech CSE Student | Aspiring Software Developer</p>
-      </div>
-    </header>
-
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about">
-          <p>
-            I am a 3rd-year BTech CSE student at KTU, focused on improving my
-            problem-solving abilities and software development skills. As a
-            self-driven learner aiming to become a software engineer, I actively
-            build projects and seek internship opportunities to gain real-world
-            experience.
-          </p>
-          <button id="resume">
-            <a href="NandhanaRajendran.pdf">Resume</a>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="container">
-        <h2 class="section-title">My Skills</h2>
-        <div class="skills-container">
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fab fa-html5"></i></div>
-            <h3>HTML</h3>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
-            <h3>CSS</h3>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
-            <h3>JavaScript</h3>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fab fa-react"></i></div>
-            <h3>React</h3>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
-            <h3>Node.js</h3>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fas fa-server"></i></div>
-            <h3>Express.js</h3>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fas fa-database"></i></div>
-            <h3>MongoDB</h3>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fas fa-database"></i></div>
-            <h3>MySQL</h3>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fab fa-java"></i></div>
-            <h3>Java</h3>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fas fa-code"></i></div>
-            <h3>DSA</h3>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
-            <h3>C</h3>
-          </div>
+        <div class="about-stats">
+          <div class="stat-card"><div class="stat-num">4+</div><div class="stat-label">Projects shipped</div></div>
+          <div class="stat-card"><div class="stat-num">3rd</div><div class="stat-label">Year of B.Tech</div></div>
+          <div class="stat-card"><div class="stat-num">2+</div><div class="stat-label">Leadership roles</div></div>
+          <div class="stat-card"><div class="stat-num">MERN</div><div class="stat-label">Primary stack</div></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="projects">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-
-        <div class="projects-container">
-          <h4>Fee Management System</h4>
-          <p>
-            🔹 Developed a full-stack fee management system for students and
-            campus departments.<br />
-            🔹 Implemented RESTful APIs using Node.js with JWT authentication
-            and role-based access control.<br />
-            🔹 Built a responsive React frontend integrated with backend APIs
-            for real-time fee tracking and payment workflows.<br />
-            🔹 Technologies: MongoDB, Express.js, React, Node.js.
-          </p>
-        </div>
-
-        <div class="projects-container">
-          <h4>Axon – Web based AI-Powered Personal Tutor</h4>
-          <p>
-            <a
-              href="https://navyamariamjohn.github.io/Axon/"
-              target="_blank"
-              class="project-link"
-            >
-              <i class="fas fa-external-link-alt"></i> Live Demo
-            </a>
-            <br />
-            🔹 Developed a frontend prototype of an AI-powered learning platform
-            for personalized learning and skill development.<br />
-            🔹 Built responsive and interactive user interfaces using HTML, CSS,
-            and JavaScript.<br />
-            🔹 Integrated a chatbot using Chatbase for interactive learning
-            assistance.<br />
-            🔹 Added curated learning resources including articles and videos
-            for guided learning.<br />
-            🔹 Contributed to the UI/UX design and frontend development as part
-            of a team project.<br />
-            🔹 Technologies: HTML, CSS, JavaScript, Chatbase.
-          </p>
-        </div>
-
-        <div class="projects-container">
-          <h4>To Do List Website</h4>
-          <p>
-            <a
-              href="https://6824d2c0cf0437440c20c2c4--taskino.netlify.app/"
-              target="_blank"
-              class="project-link"
-            >
-              <i class="fas fa-external-link-alt"></i> Live Demo
-            </a>
-            <br />
-            🔹 Developed a responsive CRUD-based task management website.<br />
-            🔹 Integrated local storage for data persistence.<br />
-            🔹 Designed an intuitive UI with a Dark Mode toggle.<br />
-            🔹 Technologies: HTML, CSS, JavaScript.
-          </p>
-        </div>
-
-        <!-- <div class="projects-container">
-          <h4>Responsive Portfolio Website</h4>
-          <p>
-            <a href="https://nandhanarajendran.netlify.app/" target="_blank"
-              >url</a
-            ><br />
-            🔹 Designed a clean, responsive personal portfolio site.<br />
-            🔹 Integrated a contact form for direct communication.<br />
-            🔹 Technologies: HTML, CSS, JavaScript.
-          </p>
-        </div> -->
-
-        <div class="projects-container">
-          <h4>Responsive Cafe Login Page</h4>
-          <p>
-            <a
-              href="https://cafeloginpage.netlify.app/"
-              target="_blank"
-              class="project-link"
-            >
-              <i class="fas fa-external-link-alt"></i> Live Demo
-            </a>
-            <br />
-            🔹 Designed a mobile-friendly login interface.<br />
-            🔹 Employed modern design principles for enhanced user
-            experience.<br />
-            🔹 Technologies: HTML, CSS.
-          </p>
-        </div>
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label"><span></span>Skills</div>
+      <h2 class="section-heading">Technologies I work with</h2>
+      <div class="skills-container">
+        <div class="skill-item"><div class="skill-icon"><i class="fab fa-html5"></i></div><h3>HTML</h3></div>
+        <div class="skill-item"><div class="skill-icon"><i class="fab fa-css3-alt"></i></div><h3>CSS</h3></div>
+        <div class="skill-item"><div class="skill-icon"><i class="fab fa-js-square"></i></div><h3>JavaScript</h3></div>
+        <div class="skill-item"><div class="skill-icon"><i class="fab fa-react"></i></div><h3>React</h3></div>
+        <div class="skill-item"><div class="skill-icon"><i class="fab fa-node-js"></i></div><h3>Node.js</h3></div>
+        <div class="skill-item"><div class="skill-icon"><i class="fas fa-server"></i></div><h3>Express.js</h3></div>
+        <div class="skill-item"><div class="skill-icon"><i class="fas fa-database"></i></div><h3>MongoDB</h3></div>
+        <div class="skill-item"><div class="skill-icon"><i class="fas fa-database"></i></div><h3>MySQL</h3></div>
+        <div class="skill-item"><div class="skill-icon"><i class="fab fa-java"></i></div><h3>Java</h3></div>
+        <div class="skill-item"><div class="skill-icon"><i class="fas fa-code"></i></div><h3>DSA</h3></div>
+        <div class="skill-item"><div class="skill-icon"><i class="fas fa-laptop-code"></i></div><h3>C</h3></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="experience">
-      <div class="container">
-        <h2 class="section-title">Experience</h2>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label"><span></span>Projects</div>
+      <h2 class="section-heading">Things I've built</h2>
+      <div class="projects-grid">
 
-        <div class="projects-container">
-          <h4>
-            DSA IG Lead – μLearn IDK Student Tech Community(Jan 2026 - Present)
-          </h4>
-          <p>
-            🔹 Organized technical learning sessions focused on Data Structures
-            and Algorithms.<br />
-            🔹 Guided students in improving problem-solving and programming
-            skills.
-          </p>
+        <div class="project-card">
+          <div class="project-num">01</div>
+          <h3>Fee Management System</h3>
+          <p class="project-desc">A full-stack platform for managing student fees across campus departments. Features role-based access control, JWT authentication, and real-time payment tracking.</p>
+          <div class="project-tags">
+            <span class="tag">MongoDB</span><span class="tag">Express.js</span><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">JWT</span>
+          </div>
         </div>
 
-        <div class="projects-container">
-          <h4>Technical Coordinator – ISTE GECI(April 2026 - Present)</h4>
-          <p>
-            🔹 Coordinated technical activities and student engagement
-            programs.<br />
-            🔹 Assisted in organizing events and technical initiatives within
-            the college community.
-          </p>
+        <div class="project-card">
+          <div class="project-num">02</div>
+          <h3>Axon – AI-Powered Tutor</h3>
+          <p class="project-desc">A web-based personalized learning platform with an integrated AI chatbot, curated resources, and interactive UI built as a collaborative team project.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Chatbase</span>
+          </div>
+          <a href="https://navyamariamjohn.github.io/Axon/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
         </div>
 
-        <div class="projects-container">
-          <h4>Volunteer, Stellerio Club (Sep 2023 – Sep 2024)</h4>
-          <p>
-            🔹 Supported the coordination of technical workshops and events.<br />
-            🔹 Actively participated in Space Week initiatives.
-          </p>
+        <div class="project-card">
+          <div class="project-num">03</div>
+          <h3>Taskino – To Do List</h3>
+          <p class="project-desc">A responsive CRUD task manager with local storage persistence and a dark mode toggle. Clean, intuitive UI designed for everyday productivity.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">LocalStorage</span>
+          </div>
+          <a href="https://6824d2c0cf0437440c20c2c4--taskino.netlify.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
         </div>
+
+        <div class="project-card">
+          <div class="project-num">04</div>
+          <h3>Café Login Page</h3>
+          <p class="project-desc">A polished, mobile-first login interface for a café brand demonstrating modern CSS design principles and attention to visual detail.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsive</span>
+          </div>
+          <a href="https://cafeloginpage.netlify.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+        </div>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-container">
-          <div class="contact-info">
-            <h3>Contact Information</h3>
-            <div class="contact-info-item">
-              <div class="contact-icon">✉️</div>
-              <div>
-                <h4>Email</h4>
-                <p>nandhanarajendran2004@gmail.com</p>
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-label"><span></span>Experience</div>
+      <h2 class="section-heading">Roles &amp; Responsibilities</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Jan 2026 – Present</div>
+          <div class="timeline-role">DSA IG Lead</div>
+          <div class="timeline-org">μLearn IDK Student Tech Community</div>
+          <p class="timeline-desc">Organized technical learning sessions on Data Structures and Algorithms, guiding students to strengthen their problem-solving and programming skills.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">April 2026 – Present</div>
+          <div class="timeline-role">Technical Coordinator</div>
+          <div class="timeline-org">ISTE GECI</div>
+          <p class="timeline-desc">Coordinating technical activities and student engagement programs, assisting in organizing events within the college community.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Sep 2023 – Sep 2024</div>
+          <div class="timeline-role">Volunteer</div>
+          <div class="timeline-org">Stellerio Club</div>
+          <p class="timeline-desc">Supported coordination of technical workshops and events, and actively participated in Space Week initiatives.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label"><span></span>Contact</div>
+      <h2 class="section-heading">Let's work together</h2>
+      <div class="contact-wrap">
+
+        <div class="contact-info">
+          <p class="contact-intro">I'm open to internship opportunities, collaborations, and interesting conversations. Feel free to reach out.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon-box">✉️</div>
+              <div class="ci-text">
+                <div class="ci-label">Email</div>
+                <div class="ci-val"><a href="mailto:nandhanarajendran2004@gmail.com">nandhanarajendran2004@gmail.com</a></div>
               </div>
             </div>
-            <div class="contact-info-item">
-              <div class="contact-icon">📱</div>
-              <div>
-                <h4>Phone</h4>
-                <a
-                  href="https://wa.me/919947849005?text=Hey%20There"
-                  target="_blank"
-                  >Contact through Whatsapp</a
-                >
+            <div class="contact-item">
+              <div class="contact-icon-box">📱</div>
+              <div class="ci-text">
+                <div class="ci-label">WhatsApp</div>
+                <div class="ci-val"><a href="https://wa.me/919947849005?text=Hey%20There" target="_blank">Contact via WhatsApp</a></div>
               </div>
             </div>
-            <div class="contact-info-item">
-              <div class="contact-icon">📍</div>
-              <div>
-                <h4>Location</h4>
-                <p>Thrissur, Kerala, India</p>
+            <div class="contact-item">
+              <div class="contact-icon-box">📍</div>
+              <div class="ci-text">
+                <div class="ci-label">Location</div>
+                <div class="ci-val">Thrissur, Kerala, India</div>
               </div>
             </div>
-            <div class="contact-info-item">
-              <div class="contact-icon">👥</div>
-              <div>
-                <h4>LinkedIn</h4>
-                <p>
-                  <a
-                    href="https://www.linkedin.com/in/nandhana-rajendran-581332304/"
-                    >linkedin.com/in/Nandhana-Rajendran</a
-                  >
-                </p>
+            <div class="contact-item">
+              <div class="contact-icon-box">👥</div>
+              <div class="ci-text">
+                <div class="ci-label">LinkedIn</div>
+                <div class="ci-val"><a href="https://www.linkedin.com/in/nandhana-rajendran-581332304/" target="_blank">nandhana-rajendran</a></div>
               </div>
             </div>
           </div>
-          <div class="contact-form">
-            <h3>Send Me a Message</h3>
+        </div>
 
-            <form id="contactForm">
+        <div class="contact-form-wrap">
+          <h3>Send a message</h3>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
               <div class="form-group">
                 <label for="name">Name</label>
-
-                <input
-                  type="text"
-                  id="name"
-                  name="from_name"
-                  class="form-control"
-                  required
-                />
+                <input type="text" id="name" name="from_name" class="form-control" placeholder="Your name" required />
               </div>
-
               <div class="form-group">
                 <label for="email">Email</label>
-
-                <input
-                  type="email"
-                  id="email"
-                  name="from_email"
-                  class="form-control"
-                  required
-                />
+                <input type="email" id="email" name="from_email" class="form-control" placeholder="your@email.com" required />
               </div>
-
-              <div class="form-group">
-                <label for="subject">Subject</label>
-
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  class="form-control"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="message">Message</label>
-
-                <textarea
-                  id="message"
-                  name="message"
-                  class="form-control"
-                  required
-                ></textarea>
-              </div>
-
-              <button type="submit" class="btn">Send Message</button>
-            </form>
-          </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-control" placeholder="What's this about?" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your message…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span class="btn-text">Send Message</span>
+              <i class="fas fa-paper-plane btn-icon"></i>
+            </button>
+          </form>
         </div>
-      </div>
-    </section>
 
-    <footer>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-copy">© 2025 Nandhana Rajendran. All rights reserved.</p>
       <div class="social-links">
-        <a
-          href="https://www.linkedin.com/in/nandhana-rajendran-581332304/"
-          target="_blank"
-          class="social-icon"
-        >
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a
-          href="https://github.com/NandhanaRajendran"
-          target="_blank"
-          class="social-icon"
-        >
-          <i class="fab fa-github"></i>
-        </a>
-
-        <a href="mailto:nandhanarajendran2004@gmail.com" class="social-icon">
-          <i class="fas fa-envelope"></i>
-        </a>
+        <a href="https://www.linkedin.com/in/nandhana-rajendran-581332304/" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/NandhanaRajendran" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:nandhanarajendran2004@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
       </div>
-      <p>&copy; 2025 Nandhana Rajendran. All rights reserved.</p>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
